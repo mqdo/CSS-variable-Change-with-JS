@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Play</title>
+  </head>
+  <body>
+    <div class="background"></div>
+    <div class="controls">
+      <h1>Change the CSS variable with <span id="standout">JS</span></h1>
+      <label for="spacing">Spacing</label>
+      <input
+        type="range"
+        id="spacing"
+        min="10"
+        max="100"
+        name="spacing"
+        value="10"
+        data-suffix="px"
+      />
+      <label for="blur">Blur</label>
+      <input
+        type="range"
+        id="blur"
+        min="0"
+        max="10"
+        name="blur"
+        value="0"
+        data-suffix="px"
+      />
+      <label for="base-color">Base Color</label>
+      <input
+        type="color"
+        name="base-color"
+        id="color"
+        value="#ffc600"
+        data-suffix=""
+      />
+    </div>
+    <div class="img-container">
+      <img
+        id="img-theme"
+        src="https://picsum.photos/id/1050/500"
+        alt="img-theme"
+      />
+    </div>
+  </body>
+  <script src="./main.js"></script>
+</html>
